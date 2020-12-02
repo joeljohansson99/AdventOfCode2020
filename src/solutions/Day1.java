@@ -12,14 +12,45 @@ public class Day1 implements Day{
 	}
 
 	@Override
-	public String answer() {
+	public String part1() {
 		// List<String> strList = input.getList();
-		// String[] strArr = input.getArray();
-		// String str = strArr[0];
-		// int number = Integer.parseInt(str);
+		String[] strArr = input.getArray();
 		
+		int[] intArr = new int[strArr.length];
+		for (int i=0; i<strArr.length; i++) {
+			intArr[i] = Integer.parseInt(strArr[i]);
+		}
 		
+		for (int i = 0; i < intArr.length; i++) {
+			for (int k = 0; k < intArr.length; k++) {
+				if (intArr[i] + intArr[k] == 2020) {
+					return String.valueOf(intArr[i] * intArr[k]);
+				}
+			}
+		}
 		
+		return null;
+	}
+	
+	public String part2() {
+
+		// List<String> strList = input.getList();
+		String[] strArr = input.getArray();
+		
+		int[] intArr = new int[strArr.length];
+		for (int i=0; i<strArr.length; i++) {
+			intArr[i] = Integer.parseInt(strArr[i]);
+		}
+		
+		for (int i = 0; i < intArr.length; i++) {
+			for (int k = 0; k < intArr.length; k++) {
+				for (int l = 0; l < intArr.length; l++) {
+					if (intArr[i] + intArr[k] + intArr[l] == 2020) {
+						return String.valueOf(intArr[i] * intArr[k] * intArr[l]);
+					}
+				}
+			}
+		}
 		return null;
 	}
 	

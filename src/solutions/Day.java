@@ -1,5 +1,6 @@
 package solutions;
 
 public interface Day {
-	String answer();
+	String part1();
+	String part2();
 }

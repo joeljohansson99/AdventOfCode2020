@@ -4,12 +4,18 @@ import solutions.*;
 public class Main {
 	
 	static public void main(String[] args) {
-		Day day = new Day1();
-		String answer = day.answer();
-		if (answer != null) {
-			System.out.println(answer);
+		Day day = new Day2();
+		String part1 = day.part1();
+		String part2 = day.part2();
+		if (part1 != null) {
+			System.out.println("Part 1 : " + part1);
 		} else {
-			System.out.println("\nNull value recieved");
+			System.out.println("\nNull value recieved part 1");
+		}
+		if (part2 != null) {
+			System.out.println("Part 2 : " + part2);
+		} else {
+			System.out.println("\nNull value recieved part 2");
 		}
 	}
 }
