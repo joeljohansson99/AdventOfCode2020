@@ -4,7 +4,7 @@ import solutions.*;
 public class Main {
 	
 	static public void main(String[] args) {
-		Day day = new Day3();
+		Day day = new Day4();
 		String part1 = day.part1();
 		String part2 = day.part2();
 		if (part1 != null) {
