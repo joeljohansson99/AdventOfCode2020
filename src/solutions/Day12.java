@@ -14,8 +14,8 @@ public class Day12 implements Day {
 	public String part1() {
 		// List<String> strList = input.getList();
 		String[] strArr = input.getArray();
-		Point loc = new Point(0,0);
-		Point dir = new Point(1,0);
+		Point2d loc = new Point2d(0,0);
+		Point2d dir = new Point2d(1,0);
 		
 		for (String s : strArr) {
 			double n = Integer.parseInt(s.substring(1));
@@ -57,8 +57,8 @@ public class Day12 implements Day {
 	public String part2() {
 		// List<String> strList = input.getList();
 		String[] strArr = input.getArray();
-		Point loc = new Point(0,0);
-		Point way = new Point(10,1);
+		Point2d loc = new Point2d(0,0);
+		Point2d way = new Point2d(10,1);
 		
 		for (String s : strArr) {
 			double n = Integer.parseInt(s.substring(1));
